@@ -1,0 +1,52 @@
+
+h1.titulo1{
+  font: arial;
+  font-weight:670;
+  margin: 19px 20px 35px 70px;
+  color: #28273E;
+}
+
+p.parrafo1{
+
+  margin: 25px 70px 35px 70px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color:#284156;
+  font-family: inherit;
+  display: block;
+  text-align: justify;
+
+}
+hr{
+  margin: 0px 77px 20px 70px;
+  height: 2px;
+
+
+}
+
+h1.titulo2{
+  font: arial;
+  font-weight:670;
+  margin: 15px 20px 35px 70px;
+  color: #28273E;
+  text-align: center;
+}
+
+#columnas{
+  margin: 25px 70px 35px 70px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-top: 0.5em;
+  margin-bottom: 4em;
+  margin-left: 173px;
+  color:#284156;
+  column-count: 3;
+  column-gap: 0;
+  text-align:justify;
+
+
+}
