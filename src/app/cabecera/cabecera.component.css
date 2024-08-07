@@ -1,11 +1,12 @@
 nav {
 	position: relative;
-	width: 1349px;
+	width: 1519px;
 	height: 50px;
 	background-color: #34495e;
 	border-radius: 0px;
 	font-size: 0;
 }
+
 nav a {
 	line-height: 50px;
 	height: 100%;
@@ -19,6 +20,7 @@ nav a {
 	color: white;
 	cursor: pointer;
 }
+
 nav .animation {
 	position: absolute;
 	height: 100%;
@@ -27,30 +29,52 @@ nav .animation {
 	transition: all .5s ease 0s;
 	border-radius: 5px;
 }
+
 a:nth-child(1) {
 	width: 140px;
 }
+
 a:nth-child(2) {
 	width: 110px;
 }
+
 a:nth-child(3) {
-	width: 92px;
+	width: 100px;
 }
+
 a:nth-child(4) {
 	width: 120px;
 }
 
-nav .start-home, a:nth-child(1):hover~.animation {
+/* Estilos para el enlace activo */
+nav a.active {
+	color: white; /* Color del texto cuando está activo */
+}
+
+/* Estilos para la animación de cada enlace */
+nav .start-home,
+a:nth-child(1):hover~.animation,
+a:nth-child(1).active~.animation {
 	width: 150px;
 	left: 0;
 	background-color: #1abc9c;
 }
-nav .start-about, a:nth-child(2):hover~.animation {
+
+nav .start-about,
+a:nth-child(2):hover~.animation,
+a:nth-child(2).active~.animation {
 	width: 100px;
 	left: 145px;
 	background-color: #e74c3c;
 }
 
+nav .start-gallery,
+a:nth-child(3):hover~.animation,
+a:nth-child(3).active~.animation {
+	width: 110px;
+	left: 245px;
+	background-color: #3498db;
+}
 
 body {
 	font-size: 12px;
@@ -58,12 +82,9 @@ body {
 	background: #2c3e50;
 }
 
-
-img.imagen{
-  height: 50px;
-  position: relative;
-  left: 945px;
-  top: -6px;
+img.imagen {
+	height: 50px;
+	position: relative;
+	left: 1025px;
+	top: -6px;
 }
-
-

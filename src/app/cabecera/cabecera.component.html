@@ -1,12 +1,13 @@
 
 <nav>
-	<a [routerLink]="['/inicio']" routerLinkActive="active">¿Quienes somos?</a>
-	<a [routerLink]="['/paquetes']" routerLinkActive="active">Paquetes</a>
+	<a [routerLink]="['/inicio']"routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">¿Quienes somos?</a>
+	<a [routerLink]="['/paquetes']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Paquetes</a>
+	<a [routerLink]="['/galeria']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Galeria</a>
 	<div class="animation start-home"></div>
   <img class="imagen" [src]="url2" >
 </nav>
 <div class="fondoImagen">
-  <img [src]="url" width="1349">
+  <img [src]="url" width="1519">
 </div>
 
 

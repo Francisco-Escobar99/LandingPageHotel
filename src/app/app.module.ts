@@ -9,10 +9,12 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaquetesComponent } from './paquetes/paquetes.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 const routes: Routes=[//2.- Creacion del objeto(componente)
   { path: 'inicio', component: InicioComponent},
   { path: 'paquetes', component: PaquetesComponent},
+  {path: 'galeria', component:GaleriaComponent},
   { path: '', component: InicioComponent, pathMatch: 'full'}, //cuando este vacio la ruta lo redirecciona a esta
   { path: '**', redirectTo: '/', pathMatch: 'full'},//cuando el usuario escribe cuaqluier cosa, lo redireeciona a esta
 ];
@@ -23,7 +25,8 @@ const routes: Routes=[//2.- Creacion del objeto(componente)
     CabeceraComponent,
     InicioComponent,
     FooterComponent,
-    PaquetesComponent
+    PaquetesComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

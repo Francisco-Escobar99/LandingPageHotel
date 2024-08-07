@@ -1,0 +1,24 @@
+h1.galeria{
+    font: arial;
+    font-weight:670;
+    margin: 19px 20px 35px 70px;
+    color: #28273E;
+}
+
+hr{
+    margin: 0px 77px 20px 70px;
+    height: 2px;
+  
+  }
+p.DescripcionGaleria{
+    margin: 25px 70px 35px 70px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color:#284156;
+    font-family: inherit;
+    display: block;
+    text-align: justify;
+}
