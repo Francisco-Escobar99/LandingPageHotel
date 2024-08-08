@@ -1,7 +1,19 @@
 <h1 class="galeria">Galeria</h1>
 <hr>
 
-<p class="DescripcionGaleria">Nuestras Habitaciones son amplias, cada habitacion cuentan con un baño propio, para los
-    los paquetes estandar y premiun cuenta con una cocina y sala. El hotel tiene a su disposicion un espacio 
-    de juegos para niños y un patio acogedor.
+<p class="DescripcionGaleria">Les recordamos a muestros clientes que las habitaciones son amplias, cada habitacion 
+    cuentan con un baño propio, para los paquetes estandar y premiun cuenta con una cocina, sala, y un jacuzzi. El hotel tiene a 
+    su disposicion un espacio de juegos para niños y un patio acogedor.
 </p>
+<section class="gallery" id="galeria">
+	<div class="contenedor">
+        <div class="menu" #menu1></div>
+		<div class="contenedor-galeria">
+			<img *ngFor="let img of imagenes" [src]="img" (click)="onImageClick(img)" class="img-galeria">
+		</div>  
+	</div>
+</section>
+<section class="imagen-light" #contenedorLight (click)="onContainerClick($event)">
+    <img src="./assets/images/close.svg" alt="Close" class="close" #closeIcon>
+    <img class="agregar-imagen" #imagenesLight>
+</section>

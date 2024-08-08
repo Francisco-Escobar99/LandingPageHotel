@@ -1,84 +1,133 @@
-.Footer{
-  background-color: #284156;
-  width: 1519px;
-  height: 245px;
+body {
+  font-size: 12px;
+  font-family: sans-serif;
+  background: #2c3e50;
 }
-h2.tituloContacto{
-  color:ivory;
-  text-align:center;
+
+.Footer {
+  background-color: #284156;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  top: 30px;
+}
+
+.textFooter {
+  text-align: center;
+}
+
+h2.tituloContacto {
+  color: ivory;
+  text-align: center;
+  margin: 0;
   font-style: italic;
   font-weight: 600;
-
 }
 
+hr {
+  width: 80%;
+  border: 1px solid white;
+  margin: 10px 0;
+}
 
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
 
-.social-media-icon1{
+.social-media-icon1,
+.social-media-icon2 {
   display: inline-block;
-  position: absolute;
-  left: 1062px;
- /* top: -590px;*/
   width: 60px;
   height: 60px;
   border: 1px solid #fff;
   border-radius: 50%;
   text-align: center;
   color: #fff;
-
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  position: absolute;
 }
 
-.social-media-icon1:hover{
+.social-media-icon1 {
+  left: 70%;
+}
+
+.social-media-icon2 {
+  left: 75%;
+}
+
+.social-media-icon1:hover,
+.social-media-icon2:hover {
   background: #fff;
   color: darkslategray;
-
 }
 
-.social-media-icon1 i{
+.social-media-icon1 i,
+.social-media-icon2 i {
   font-size: 37px;
   line-height: 60px;
-
 }
 
-
-.social-media-icon2{
-  display: inline-block;
-  position: absolute;
-  left: 1145px;
- /* bottom: -590px;*/
-  width: 60px;
-  height: 60px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  text-align: center;
-  color: #fff;
-
-}
-
-.social-media-icon2:hover{
-  background: #fff;
-  color: darkslategray;
-
-}
-
-.social-media-icon2 i{
-  font-size: 37px;
-  line-height: 60px;
-
-}
-
-hr{
-  margin: 58px 130px 20px 130px;
-  height: 2px;
-  color: white;
-
-}
-
-p.DescripcionContacto{
-  position: absolute;
-  left: 139px;
+p.DescripcionContacto {
   color: white;
   font-style: italic;
   font-weight: 400;
+  text-align: center;
+  margin: 10px 20px 10;
+}
+
+@media (max-width: 1024px) {
+  .social-media-icon1 {
+    left: 60%;
+  }
+
+  .social-media-icon2 {
+    left: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding: 15px 10px;
+  }
+
+  h2.tituloContacto {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .social-media {
+    justify-content: center;
+    position: relative;
+  }
+
+  .social-media-icon1,
+  .social-media-icon2 {
+    position: static;
+    margin: 0 5px;
+  }
+
+  .social-media-icon1,
+  .social-media-icon2 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-media-icon1 i,
+  .social-media-icon2 i {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  p.DescripcionContacto {
+    font-size: 1rem;
+  }
 }
