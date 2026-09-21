@@ -1,47 +1,108 @@
-<h1 class="paquetes">Paquetes que ofrecemos</h1>
-<hr>
-<p class="descripcionPaquete"> Hotel Palacio te ofrecemos tres direntes paquetes para que disfrutes con tu familia el mejor 
-  hospedaje de tu vida. Llamanos para hacer la reservacion de tu paquete.</p>
+<main class="paquetes-page">
+  <section class="paquetes-section">
+    <div class="container">
 
-  <div class="container">
-    <div class="row">
-      <div class="col package">
-        <h2 class="package-title">Paquete básico</h2>
-        <ul class="package-features">
-          <li>2 noches de hospedaje</li>
-          <li>Desayuno incluido</li>
-          <li>Acceso a la piscina</li>
-          <li>1 cama matrimonial</li>
-          <br>
-        </ul>
-        <div class="package-price">$1200</div>
-        <br>
+      <!-- Header -->
+      <div class="section-header" data-animate>
+        <span class="section-label">Elige tu estadía ideal</span>
+        <h1 class="section-title">Nuestros Paquetes</h1>
+        <div class="gold-divider"></div>
+        <p class="section-desc">
+          En Hotel Palacio te ofrecemos tres paquetes diseñados para que disfrutes
+          con tu familia el mejor hospedaje de tu vida. Llámanos para hacer tu reservación.
+        </p>
       </div>
-  
-      <div class="col package">
-        <h2 class="package-title">Paquete estándar</h2>
-        <ul class="package-features">
-          <li>3 noches de hospedaje</li>
-          <li>Desayuno y cena incluidos</li>
-          <li>Acceso al gimnasio y al spa</li>
-          <li>2 cama matrimonial</li>
-          <br>
-        </ul>
-        <div class="package-price">$1600</div>
-        <br>
+
+      <!-- Package cards -->
+      <div class="packages-grid" data-animate>
+
+        <!-- Básico -->
+        <div class="package-card">
+          <div class="package-header">
+            <div class="package-icon"><i class='bx bx-moon'></i></div>
+            <span class="package-badge">Básico</span>
+          </div>
+          <div class="package-body">
+            <div class="package-price">
+              <span class="currency">$</span>1,200
+              <span class="period">MXN / estancia</span>
+            </div>
+            <ul class="package-features">
+              <li><i class='bx bx-check'></i> 2 noches de hospedaje</li>
+              <li><i class='bx bx-check'></i> Desayuno incluido</li>
+              <li><i class='bx bx-check'></i> Acceso a la piscina</li>
+              <li><i class='bx bx-check'></i> 1 cama matrimonial</li>
+              <li><i class='bx bx-check'></i> WiFi gratuito</li>
+              <li class="disabled"><i class='bx bx-x'></i> Spa y gimnasio</li>
+              <li class="disabled"><i class='bx bx-x'></i> Cocina en habitación</li>
+            </ul>
+            <a href="tel:9611128901" class="btn-package">
+              <i class='bx bx-phone'></i> Reservar ahora
+            </a>
+          </div>
+        </div>
+
+        <!-- Estándar (featured) -->
+        <div class="package-card featured">
+          <div class="popular-badge">Más popular</div>
+          <div class="package-header">
+            <div class="package-icon"><i class='bx bx-star'></i></div>
+            <span class="package-badge">Estándar</span>
+          </div>
+          <div class="package-body">
+            <div class="package-price">
+              <span class="currency">$</span>1,600
+              <span class="period">MXN / estancia</span>
+            </div>
+            <ul class="package-features">
+              <li><i class='bx bx-check'></i> 3 noches de hospedaje</li>
+              <li><i class='bx bx-check'></i> Desayuno y cena incluidos</li>
+              <li><i class='bx bx-check'></i> Acceso a la piscina</li>
+              <li><i class='bx bx-check'></i> 2 camas matrimoniales</li>
+              <li><i class='bx bx-check'></i> WiFi gratuito</li>
+              <li><i class='bx bx-check'></i> Gimnasio y spa</li>
+              <li class="disabled"><i class='bx bx-x'></i> Cocina en habitación</li>
+            </ul>
+            <a href="tel:9611128901" class="btn-package featured-btn">
+              <i class='bx bx-phone'></i> Reservar ahora
+            </a>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="package-card">
+          <div class="package-header">
+            <div class="package-icon"><i class='bx bxs-crown'></i></div>
+            <span class="package-badge">Premium</span>
+          </div>
+          <div class="package-body">
+            <div class="package-price">
+              <span class="currency">$</span>2,000
+              <span class="period">MXN / estancia</span>
+            </div>
+            <ul class="package-features">
+              <li><i class='bx bx-check'></i> 5 noches de hospedaje</li>
+              <li><i class='bx bx-check'></i> Todas las comidas incluidas</li>
+              <li><i class='bx bx-check'></i> Acceso a todas las instalaciones</li>
+              <li><i class='bx bx-check'></i> 1 cama king size</li>
+              <li><i class='bx bx-check'></i> WiFi gratuito</li>
+              <li><i class='bx bx-check'></i> Spa, jacuzzi y gimnasio</li>
+              <li><i class='bx bx-check'></i> Cocina y sala privada</li>
+            </ul>
+            <a href="tel:9611128901" class="btn-package">
+              <i class='bx bx-phone'></i> Reservar ahora
+            </a>
+          </div>
+        </div>
+
       </div>
-  
-      <div class="col package">
-        <h2 class="package-title">Paquete premium</h2>
-        <ul class="package-features">
-          <li>5 noches de hospedaje</li>
-          <li>Todas las comidas incluidas</li>
-          <li>Acceso a todas las instalaciones</li>
-          <li>1 cama king size</li>
-        </ul>
-        <div class="package-price">$2000</div>
+
+      <!-- Notice -->
+      <div class="reservation-notice" data-animate>
+        <i class='bx bx-info-circle'></i>
+        <p>Las reservaciones se realizan vía telefónica. Llámanos al <strong>961 112 89 01</strong> y con gusto te atenderemos.</p>
       </div>
+
     </div>
-  </div>
-  <br>
-  <p class="segundoParrafo"> <strong>A todos nuestros huespedes se les recuerda que las reservaciones es via telefonica.</strong> </p>
+  </section>
+</main>

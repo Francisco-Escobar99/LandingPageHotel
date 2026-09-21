@@ -1,28 +1,139 @@
+<main class="inicio-page">
 
-  <h1 class="titulo1">¿Quienes Somos?</h1>
-  <hr>
-  <p class="parrafo1">Somos un hotel de gran categoria, ubicados en la cuidad de Tuxtla
-    Gutierrez, Chiapas, sobre el Boulevar Belario Dominguez, a una cuadra de plaza Terán, Hotel Palacio te ofrece
-    el mejor alojamiento de tu vida, habitaciones a un costo accesible, cuenta con 43 habitaciones, terraza, albercas
-    para nuestros huespedes, comida de alta calidad chiapaneca. Ven y conocenos.</p>
-  <br> 
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text" data-animate>
+          <span class="section-label">Nuestro Hotel</span>
+          <h1 class="section-title">¿Quiénes Somos?</h1>
+          <div class="gold-divider left"></div>
+          <p class="about-description">
+            Somos un hotel de gran categoría, ubicados en la ciudad de <strong>Tuxtla Gutiérrez, Chiapas</strong>,
+            sobre el Bulevar Belisario Domínguez, a una cuadra de Plaza Terán. <strong>Hotel Palacio</strong>
+            te ofrece el mejor alojamiento de tu vida: habitaciones a un costo accesible,
+            43 habitaciones modernas, terraza con vistas panorámicas, albercas exclusivas para
+            nuestros huéspedes y cocina chiapaneca de alta calidad.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class='bx bx-map-pin'></i>
+              <div>
+                <strong>Ubicación privilegiada</strong>
+                <span>Bulevar Belisario Domínguez, Tuxtla Gutiérrez</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class='bx bx-phone'></i>
+              <div>
+                <strong>Reservaciones</strong>
+                <span>961 112 89 01</span>
+              </div>
+            </div>
+          </div>
+          <a [routerLink]="['/paquetes']" class="btn-primary">
+            Ver nuestros paquetes <i class='bx bx-right-arrow-alt'></i>
+          </a>
+        </div>
 
-  <h1 class="titulo2"> Servicios y Actividades </h1>
-  <div id="columnas">
-    <li>Acceso a discapacitados</li>
-    <li>Internet wifi</li>
-    <li>Servicio fax</li>
-    <li>Informacion turistica</li>
-    <li>Restaurante</li>
-    <li>Alquiler de autos</li>
-    <li>Recepcion 24h</li>
-    <li>Servicio Habitacion</li>
-    <li>Caja de seguridad</li>
-    <li>Servicio de planchado</li>
-    <li>Servicio de lavanderia</li>
-    <li>Sala TV</li>
-    <li>Transporte de equipaje</li>
-    <li>Albercas</li>
-    <li>Ascensor</li>
-  </div>
+        <div class="about-cards" data-animate>
+          <div class="info-card">
+            <div class="card-icon"><i class='bx bx-bed'></i></div>
+            <div class="card-number">43</div>
+            <div class="card-label">Habitaciones</div>
+          </div>
+          <div class="info-card accent">
+            <div class="card-icon"><i class='bx bx-swim'></i></div>
+            <div class="card-number">3</div>
+            <div class="card-label">Albercas</div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon"><i class='bx bx-time'></i></div>
+            <div class="card-number">24h</div>
+            <div class="card-label">Recepción</div>
+          </div>
+          <div class="info-card accent">
+            <div class="card-icon"><i class='bx bx-star'></i></div>
+            <div class="card-number">★ 4.8</div>
+            <div class="card-label">Valoración</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-label">Lo que ofrecemos</span>
+        <h2 class="section-title">Servicios y Actividades</h2>
+        <div class="gold-divider"></div>
+      </div>
+
+      <div class="services-grid" data-animate>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-handicap'></i></div>
+          <h3>Acceso a discapacitados</h3>
+          <p>Instalaciones completamente accesibles para todos nuestros huéspedes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-wifi'></i></div>
+          <h3>Internet WiFi</h3>
+          <p>Conexión de alta velocidad en todas las áreas del hotel.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-info-circle'></i></div>
+          <h3>Información turística</h3>
+          <p>Guías y mapas de los mejores atractivos de Chiapas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-restaurant'></i></div>
+          <h3>Restaurante</h3>
+          <p>Cocina chiapaneca de alta calidad para deleitar tu paladar.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bxs-car'></i></div>
+          <h3>Alquiler de autos</h3>
+          <p>Servicio de renta de vehículos para explorar la región.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-concierge'></i></div>
+          <h3>Recepción 24h</h3>
+          <p>Atención personalizada a cualquier hora del día o la noche.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-bell-ring'></i></div>
+          <h3>Servicio a la habitación</h3>
+          <p>Comida, bebidas y artículos de primera necesidad al instante.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-lock-alt'></i></div>
+          <h3>Caja de seguridad</h3>
+          <p>Guarda tus objetos de valor con total tranquilidad.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-purchase-tag'></i></div>
+          <h3>Lavandería</h3>
+          <p>Servicio de lavado y planchado rápido y de calidad.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-tv'></i></div>
+          <h3>Sala TV</h3>
+          <p>Área común con televisión de pantalla grande y cable.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-swim'></i></div>
+          <h3>Albercas</h3>
+          <p>Disfruta de nuestras albercas exclusivas para huéspedes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class='bx bx-up-arrow-circle'></i></div>
+          <h3>Ascensor</h3>
+          <p>Acceso cómodo a todos los pisos del hotel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

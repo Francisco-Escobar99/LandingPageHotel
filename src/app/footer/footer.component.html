@@ -1,21 +1,62 @@
-<div class="Footer">
-  <div class="textFotter">
-    <h2 class="tituloContacto"> Como Contactarnos</h2>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
 
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2 class="footer-logo">Hotel <span>Palacio</span></h2>
+          <p class="footer-tagline">El mejor alojamiento de tu vida en el corazón de Chiapas.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" aria-label="Twitter / X">
+              <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <i class='bx bxl-instagram'></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-nav">
+          <h3 class="footer-heading">Navegación</h3>
+          <ul>
+            <li><a [routerLink]="['/inicio']">¿Quiénes somos?</a></li>
+            <li><a [routerLink]="['/paquetes']">Paquetes</a></li>
+            <li><a [routerLink]="['/galeria']">Galería</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h3 class="footer-heading">Contáctanos</h3>
+          <ul class="contact-list">
+            <li>
+              <i class='bx bx-phone'></i>
+              <a href="tel:9611128901">961 112 89 01</a>
+            </li>
+            <li>
+              <i class='bx bx-envelope'></i>
+              <a href="mailto:HotelPalacioMx@gmail.com">HotelPalacioMx@gmail.com</a>
+            </li>
+            <li>
+              <i class='bx bx-map'></i>
+              <span>Av. 23 de Septiembre #1034,<br>Col. Real del Sur, Tuxtla Gutiérrez, Chiapas</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </div>
-  <hr>
-  <br>
-  <div class="social-media">
-    <a href="Facebook" class="social-media-icon1">
-        <i class='bx bxl-facebook-circle'></i>
-    </a>
-    <a href="Twitter" class="social-media-icon2">
-        <i class='bx bxl-twitter'></i>
-    </a>
-</div>
-<p class="DescripcionContacto">
-  Tel/Cel. 961 112 89 01. <br>
-  Direccion: Av.23 de Septiembre #1034, Col. Real del Sur. <br>
-  Correo Electronico. HotelPalacionMx@gmail.com. 
-</p>
-</div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {{ currentYear }} Hotel Palacio. Todos los derechos reservados.</p>
+      <p class="footer-credit">Tuxtla Gutiérrez, Chiapas, México</p>
+    </div>
+  </div>
+</footer>

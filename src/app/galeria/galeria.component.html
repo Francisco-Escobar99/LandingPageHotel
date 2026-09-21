@@ -1,19 +1,46 @@
-<h1 class="galeria">Galeria</h1>
-<hr>
+<main class="galeria-page">
+  <section class="galeria-section">
+    <div class="container">
 
-<p class="DescripcionGaleria">Les recordamos a muestros clientes que las habitaciones son amplias, cada habitacion 
-    cuentan con un baño propio, para los paquetes estandar y premiun cuenta con una cocina, sala, y un jacuzzi. El hotel tiene a 
-    su disposicion un espacio de juegos para niños y un patio acogedor.
-</p>
-<section class="gallery" id="galeria">
-	<div class="contenedor">
-        <div class="menu" #menu1></div>
-		<div class="contenedor-galeria">
-			<img *ngFor="let img of imagenes" [src]="img" (click)="onImageClick(img)" class="img-galeria">
-		</div>  
-	</div>
-</section>
-<section class="imagen-light" #contenedorLight (click)="onContainerClick($event)">
-    <img src="./assets/images/close.svg" alt="Close" class="close" #closeIcon>
-    <img class="agregar-imagen" #imagenesLight>
-</section>
+      <!-- Header -->
+      <div class="section-header" data-animate>
+        <span class="section-label">Nuestras instalaciones</span>
+        <h1 class="section-title">Galería</h1>
+        <div class="gold-divider"></div>
+        <p class="section-desc">
+          Descubre las amplias habitaciones, cada una con baño privado. Los paquetes Estándar y Premium
+          cuentan con cocina, sala y jacuzzi. Disfruta también de nuestra área de juegos para niños
+          y nuestro acogedor patio interior.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" data-animate>
+        <div
+          *ngFor="let img of imagenes; let i = index"
+          class="gallery-item"
+          (click)="onImageClick(img)"
+          [attr.data-index]="i">
+          <img [src]="img" [alt]="'Hotel Palacio — imagen ' + (i + 1)" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="overlay-content">
+              <i class='bx bx-zoom-in'></i>
+              <span>Ver imagen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" #contenedorLight (click)="onContainerClick($event)">
+  <button class="lightbox-close" #closeIcon (click)="closeLightbox()">
+    <i class='bx bx-x'></i>
+  </button>
+  <div class="lightbox-wrapper">
+    <img class="lightbox-img" #imagenesLight alt="Imagen ampliada del Hotel Palacio">
+  </div>
+</div>

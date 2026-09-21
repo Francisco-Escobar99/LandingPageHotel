@@ -1,16 +1,70 @@
+<header class="site-header" [class.scrolled]="isScrolled">
+  <nav class="navbar">
+    <!-- Logo -->
+    <a [routerLink]="['/inicio']" class="nav-logo">
+      <img [src]="url2" alt="Hotel Palacio Logo" class="logo-img">
+      <span class="logo-text">Hotel <strong>Palacio</strong></span>
+    </a>
 
-<nav>
-	<a [routerLink]="['/inicio']"routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">¿Quienes somos?</a>
-	<a [routerLink]="['/paquetes']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Paquetes</a>
-	<a [routerLink]="['/galeria']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Galeria</a>
-	<div class="animation start-home"></div>
-  <img class="imagen" [src]="url2" >
-</nav>
-<div class="fondoImagen">
-  <img [src]="url" width="100%">
-</div>
+    <!-- Nav links -->
+    <ul class="nav-links" [class.open]="menuOpen">
+      <li>
+        <a [routerLink]="['/inicio']" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">
+          <i class='bx bx-home-alt'></i> Quiénes Somos
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/paquetes']" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">
+          <i class='bx bx-package'></i> Paquetes
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/galeria']" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">
+          <i class='bx bx-image-alt'></i> Galería
+        </a>
+      </li>
+      <li class="nav-cta">
+        <a href="tel:9611128901" class="btn-reservar" (click)="closeMenu()">
+          <i class='bx bx-phone'></i> Reservar
+        </a>
+      </li>
+    </ul>
 
+    <!-- Hamburger -->
+    <button class="hamburger" (click)="toggleMenu()" [class.active]="menuOpen" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>
 
-
-
-
+<!-- Hero section -->
+<section class="hero">
+  <div class="hero-media">
+    <img [src]="url" alt="Hotel Palacio — Vista Principal" class="hero-bg">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-label">Bienvenido a</span>
+    <h1 class="hero-title">Hotel Palacio</h1>
+    <p class="hero-subtitle">Experiencias de lujo en el corazón de Tuxtla Gutiérrez, Chiapas</p>
+    <div class="hero-actions">
+      <a [routerLink]="['/paquetes']" class="btn-hero-primary">Ver Paquetes</a>
+      <a [routerLink]="['/galeria']" class="btn-hero-secondary">Galería</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">43</span><span class="stat-label">Habitaciones</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Albercas</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">24h</span><span class="stat-label">Servicio</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <i class='bx bx-chevron-down'></i>
+  </div>
+</section>
