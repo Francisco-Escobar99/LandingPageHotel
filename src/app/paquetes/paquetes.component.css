@@ -302,4 +302,8 @@
 
 @media (max-width: 600px) {
   .paquetes-section { padding: 4rem 0 3rem; }
+  .package-header { padding: 1.5rem; }
+  .package-body { padding: 1.5rem; }
+  .package-price { font-size: 2.2rem; }
+  .currency { font-size: 1.2rem; }
 }

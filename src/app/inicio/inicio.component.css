@@ -267,10 +267,11 @@
 @media (max-width: 600px) {
   .about-section { padding: 4rem 0 3rem; }
   .services-section { padding: 4rem 0; }
-  .services-grid { grid-template-columns: 1fr 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .about-cards { grid-template-columns: 1fr; gap: 1rem; }
 }
 
 @media (max-width: 400px) {
-  .services-grid { grid-template-columns: 1fr; }
-  .about-cards { grid-template-columns: 1fr 1fr; }
+  .info-card { padding: 1.5rem 1rem; }
+  .card-number { font-size: 1.8rem; }
 }
